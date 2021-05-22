@@ -27,10 +27,9 @@ namespace Cinema.Controllers
             return View();
         }
 
-        public bool Test()
+        public void Test()
         {
-            return true;
-
+            var a = "Hello world";
         }
     }
 }
