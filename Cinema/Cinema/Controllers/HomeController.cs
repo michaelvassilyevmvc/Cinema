@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinema.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -27,9 +28,6 @@ namespace Cinema.Controllers
             return View();
         }
 
-        public void Test()
-        {
-            var a = "Hello world";
-        }
+        
     }
 }
