@@ -122,10 +122,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TicketsAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LogIn.cs" />
+    <Compile Include="Models\Tickets\Genre.cs" />
+    <Compile Include="Models\Tickets\Hall.cs" />
+    <Compile Include="Models\Tickets\Movie.cs" />
+    <Compile Include="Models\Tickets\Tariff.cs" />
+    <Compile Include="Models\Tickets\TicketsJsonModel.cs" />
+    <Compile Include="Models\Tickets\Timeslot.cs" />
+    <Compile Include="Models\Tickets\Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +148,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Files\Tickets.json" />
+    <Content Include="Files\Ticket.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
