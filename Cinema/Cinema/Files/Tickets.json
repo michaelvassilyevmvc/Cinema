@@ -7,8 +7,14 @@
       "MinAge": 18,
       "Duration": 150,
       "Rating": 4.72,
-      "Types": [ 0 ],
-      "Genres": [ 1, 3, 7 ],
+      "Types": [
+        0
+      ],
+      "Genres": [
+        1,
+        3,
+        7
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5108/220x118/p_415f24a.jpg"
     },
     {
@@ -18,8 +24,12 @@
       "MinAge": 10,
       "Duration": 99,
       "Rating": 0.0,
-      "Types": [ 1 ],
-      "Genres": [ 0 ],
+      "Types": [
+        1
+      ],
+      "Genres": [
+        0
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5151/280x151/p_c46736b.jpg"
     },
     {
@@ -29,8 +39,12 @@
       "MinAge": 6,
       "Duration": 102,
       "Rating": 0.0,
-      "Types": [ 0 ],
-      "Genres": [ 6 ],
+      "Types": [
+        0
+      ],
+      "Genres": [
+        6
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5132/280x151/p_fba5830.jpg"
     },
     {
@@ -40,8 +54,14 @@
       "MinAge": 12,
       "Duration": 102,
       "Rating": 5.0,
-      "Types": [ 0 ],
-      "Genres": [ 0, 2, 7 ],
+      "Types": [
+        0
+      ],
+      "Genres": [
+        0,
+        2,
+        7
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5216/220x118/p_3f05376.jpg"
     },
     {
@@ -51,8 +71,15 @@
       "MinAge": 12,
       "Duration": 105,
       "Rating": 0.0,
-      "Types": [ 0, 1 ],
-      "Genres": [ 2, 7, 8 ],
+      "Types": [
+        0,
+        1
+      ],
+      "Genres": [
+        2,
+        7,
+        8
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5203/280x151/p_51852d7.jpg"
     },
     {
@@ -62,8 +89,14 @@
       "MinAge": 12,
       "Duration": 108,
       "Rating": 0.0,
-      "Types": [ 0, 1 ],
-      "Genres": [ 3, 5 ],
+      "Types": [
+        0,
+        1
+      ],
+      "Genres": [
+        3,
+        5
+      ],
       "ImageUrl": "https://images.kinomax.ru/films/5/5260/280x151/p_ba3ff67.jpg"
     }
   ],
