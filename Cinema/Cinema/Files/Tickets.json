@@ -132,7 +132,7 @@
     {
       "Id": 1,
       "Name": "Standard",
-      "Cost": 270.0
+      "Cost": 270.00
     },
     {
       "Id": 2,
@@ -142,7 +142,7 @@
     {
       "Id": 3,
       "Name": "StudentStandart",
-      "Cost": 120.0
+      "Cost": 120.00
     }
   ]
 }

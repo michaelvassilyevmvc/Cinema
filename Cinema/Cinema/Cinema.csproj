@@ -135,6 +135,8 @@
     <Compile Include="Models\Tickets\Timeslot.cs" />
     <Compile Include="Models\Tickets\Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ITicketService.cs" />
+    <Compile Include="Services\JsonTicketService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />

@@ -1,4 +1,5 @@
 ﻿using Cinema.Models.Tickets;
+using Cinema.Services;
 using Newtonsoft.Json;
 using System.Web.Mvc;
 
@@ -6,40 +7,20 @@ namespace Cinema.Controllers
 {
     public class TicketsAdminController : Controller
     {
-        private string PathToJson = "/Files/Tickets.json";
-        public ActionResult SaveTickets()
+        private readonly ITicketService _ticketService;
+        public TicketsAdminController()
         {
-            var movies = new Movie[3];
-            var tariffs = new Tariff[3];
-            var halls = new Hall[3];
-            var timeslots = new Timeslot[3];
-
-            var jsonModel = new TicketsJsonModel
-            {
-                Halls = halls,
-                Movies = movies,
-                Tariffs = tariffs,
-                Timeslots = timeslots
-            };
-
-            var json = JsonConvert.SerializeObject(jsonModel);
-            var jsonFilePath = HttpContext.Server.MapPath(PathToJson);
-            System.IO.File.WriteAllText(jsonFilePath,json);
-
-            return Content(json, "application/json");
-            
+            this._ticketService = new JsonTicketService(System.Web.HttpContext.Current);
         }
 
-        public ActionResult GetAllTickets()
+        public ActionResult FindMovieById(int id)
         {
-            var jsonFilePath = HttpContext.Server.MapPath(PathToJson);
-            if (System.IO.File.Exists(jsonFilePath))
-            {
-                var jsonModel = System.IO.File.ReadAllText(jsonFilePath);
-                var deserializedModel = JsonConvert.DeserializeObject<TicketsJsonModel>(jsonModel);
-                return Content(jsonModel, "application/json");
-            }
-            return Content("File don't exist", "application/json");
+            var movie = _ticketService.GetMovieById(id);
+            if (movie == null)
+                return Content("Movie with such id doesn't exist");
+
+            var modelJson = JsonConvert.SerializeObject(movie);
+            return Content(modelJson, "application/json");
         }
     }
 }
